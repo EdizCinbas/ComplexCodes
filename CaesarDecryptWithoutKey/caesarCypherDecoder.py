@@ -1,3 +1,12 @@
+'''
+This code decrypts a caesar cypher without the key using brute force to get a list of 
+26 possibilities. And then using a dictionary search from a list of 3000 words to find
+the sentence with the most amount of valid words. 
+
+One successful test for the code was "THISCLASSISONEOFMYFAVOURITES" which I had cyphered into 
+"AOPZJSHZZPZVULVMTFMHCVBYPALZ" using the key '7'. 
+'''
+
 def caesar_decrypt(ciphertext, shift):
     decrypted_text = ""
     for char in ciphertext:
